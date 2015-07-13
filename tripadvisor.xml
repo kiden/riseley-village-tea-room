@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" ?> 
+<?xml version="1.0" encoding="UTF-8" ?>
 <Module>
-  <ModulePrefs title="tripadvisor" /> 
+  <ModulePrefs title="tripadvisor" />
   <Content type="html">
      <![CDATA[
 
@@ -14,5 +14,5 @@
 <script src="http://www.jscache.com/wejs?wtype=selfserveprop&amp;uniq=919&amp;locationId=6620640&amp;lang=en_UK&amp;rating=true&amp;nreviews=5&amp;writereviewlink=true&amp;popIdx=false&amp;iswide=false&amp;border=false&amp;display_version=2"></script>
 
      ]]>
-  </Content> 
+  </Content>
 </Module>
