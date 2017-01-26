@@ -13,7 +13,7 @@
               function getHtml() {    
                   var parameters = {};  
                   parameters[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.TEXT;  
-                  var url = "https://script.google.com/macros/s/AKfycbxbeGLJ_fLhcxi9JK4NRbKllLaHDJ2pCgyrMWv3nrw/dev";  
+                  var url = "https://script.google.com/macros/s/AKfycbwArk2SiTg0N_6-Kb1Gs8bMXU7eRNqrEjRaX1bNq-MYZGf1d54/exec";  
                   gadgets.io.makeRequest(url, processResponse, parameters);
               };
              
