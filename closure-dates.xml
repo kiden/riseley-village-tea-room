@@ -1,41 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Module>
-  <ModulePrefs title="RVTR Closures" />
-  <Content type="html">
-     <![CDATA[
-
-<script type="text/javascript">
-(function() { 
-  var closures_apps_script = 'https://script.google.com/macros/s/AKfycbwArk2SiTg0N_6-Kb1Gs8bMXU7eRNqrEjRaX1bNq-MYZGf1d54/exec';
-
-  var httpRequest;
-  document.getElementById("ajaxButton").onclick = function() { makeRequest(closures_apps_script); };
-
-  function makeRequest(url) {
-    httpRequest = new XMLHttpRequest();
-
-    if (!httpRequest) {
-      alert('Giving up :( Cannot create an XMLHTTP instance');
-      return false;
-    }
-    httpRequest.onreadystatechange = alertContents;
-    httpRequest.open('GET', url);
-    httpRequest.send();
-  }
-
-  function alertContents() {
-	alert(httpRequest.status);
-    if (httpRequest.readyState === XMLHttpRequest.DONE) {
-      if (httpRequest.status === 200) {
-        alert(httpRequest.responseText);
-      } else {
-        alert('There was a problem with the request.' + httpRequest.status);
-      }
-    }
-  }
-})();
-</script>
-           
-     ]]>
-  </Content>
+	<ModulePrefs title="RVTR Closures">
+		<Require feature="dynamic-height"/>
+	</ModulePrefs>
+	<Content type="url" href="https://script.google.com/macros/s/AKfycbxbeGLJ_fLhcxi9JK4NRbKllLaHDJ2pCgyrMWv3nrw/dev">
+		gadgets.window.adjustHeight();
+	</Content>
 </Module>
