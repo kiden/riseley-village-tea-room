@@ -18,6 +18,7 @@
               };
              
               function processResponse(response) {  
+alert(response.text);
                    document.getElementById('contentDiv').innerHTML = response.text;
      		   gadgets.window.adjustHeight();
               };
