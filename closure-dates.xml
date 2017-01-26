@@ -3,9 +3,28 @@
 	<ModulePrefs title="RVTR Closures">
 		<Require feature="dynamic-height"/>
 	</ModulePrefs>
-	<Content type="url" href="https://script.google.com/macros/s/AKfycbxbeGLJ_fLhcxi9JK4NRbKllLaHDJ2pCgyrMWv3nrw/dev">
-		<script type="text/javascript">
-			gadgets.window.adjustHeight();
-		</script>
+
+    <Content type="html">
+          <![CDATA[
+          <div id="contentDiv"></div>
+           
+          <script type="text/javascript">
+             
+              function getHtml() {    
+                  var parameters = {};  
+                  parameters[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.TEXT;  
+                  var url = "https://script.google.com/macros/s/AKfycbxbeGLJ_fLhcxi9JK4NRbKllLaHDJ2pCgyrMWv3nrw/dev";  
+                  gadgets.io.makeRequest(url, processResponse, parameters);
+              };
+             
+              function processResponse(response) {  
+                   document.getElementById('contentDiv').innerHTML = response.text;
+     		   gadgets.window.adjustHeight();
+              };
+             
+              gadgets.util.registerOnLoadHandler(getHtml);
+         
+         </script>
+          ]]>
 	</Content>
 </Module>
