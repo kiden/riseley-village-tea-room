@@ -9,7 +9,7 @@
           <div id="contentDiv">Are we open today?</div>
            
           <script type="text/javascript">
-             
+          /*   
               function getHtml() {    
                   var parameters = {};  
                   parameters[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.TEXT;  
@@ -23,7 +23,7 @@
               };
              
               gadgets.util.registerOnLoadHandler(getHtml);
-         
+         */
          </script>
           ]]>
 	</Content>
