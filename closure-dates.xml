@@ -7,7 +7,24 @@
     <Content type="html">
           <![CDATA[
           <div id="contentDiv">Are we open today?</div>
-           
+          
+          <script type="text/javascript">
+            
+              function getHtml() {    
+                  var parameters = {};  
+                  parameters[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.TEXT;  
+                  var url = "https://script.google.com/macros/s/AKfycbwArk2SiTg0N_6-Kb1Gs8bMXU7eRNqrEjRaX1bNq-MYZGf1d54/exec";  
+                  gadgets.io.makeRequest(url, processResponse, parameters);
+              };
+             
+              function processResponse(response) {  
+                   document.getElementById('contentDiv').innerHTML = response.text;
+     		   gadgets.window.adjustHeight();
+              };
+             
+              gadgets.util.registerOnLoadHandler(getHtml);
+         
+         </script>
 
           ]]>
 	</Content>
