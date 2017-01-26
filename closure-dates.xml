@@ -4,6 +4,8 @@
 		<Require feature="dynamic-height"/>
 	</ModulePrefs>
 	<Content type="url" href="https://script.google.com/macros/s/AKfycbxbeGLJ_fLhcxi9JK4NRbKllLaHDJ2pCgyrMWv3nrw/dev">
-		gadgets.window.adjustHeight();
+		<script type="text/javascript">
+			gadgets.window.adjustHeight();
+		</script>
 	</Content>
 </Module>
