@@ -6,13 +6,7 @@
 
     <Content type="html">
 		<![CDATA[
-		<style>
-		#contentDiv {
-			color: #444;
-			line-height: 1.4;
-			font-family: "Verdana","Helvetica","Arial",sans-serif;
-		}
-		</style>
+
 		<div id="contentDiv"></div>
 
 		<script type="text/javascript">
