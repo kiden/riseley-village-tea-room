@@ -6,15 +6,7 @@
 
     <Content type="html">
 		<![CDATA[
-		<style>
-		#contentDiv {
-			color: #444;
-			line-height: 1.4;
-			font-family: "Verdana","Helvetica","Arial",sans-serif;
-		}
-		</style>
-
-		<div id="contentDiv"></div>
+		<div id="contentDiv" style="color: #444; line-height: 1.4; font-family: &quot;Verdana&quot;,&quot;Helvetica&quot;,&quot;Arial&quot;,sans-serif;"></div>
 
 		<script type="text/javascript">
 
