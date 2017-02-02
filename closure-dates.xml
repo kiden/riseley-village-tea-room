@@ -17,9 +17,9 @@
 		}*/
 		</script>
 		<style>
-		#contentDiv {
+		/*#contentDiv {
 			text-align: center;
-		}
+		}*/
 		</style>
 		<div id="contentDiv"></div>
 
