@@ -6,20 +6,12 @@
 
     <Content type="html">
 		<![CDATA[
-		<script type="text/javascript">
-		/*window.onload = function() {
-				if (parent) {
-						var oHead = document.getElementsByTagName("head")[0];
-						var arrStyleSheets = parent.document.getElementsByTagName("link");
-						for (var i = 0; i < arrStyleSheets.length; i++)
-								oHead.appendChild(arrStyleSheets[i].cloneNode(true));
-				}
-		}*/
-		</script>
 		<style>
-		/*#contentDiv {
-			text-align: center;
-		}*/
+		#contentDiv {
+			color: #444;
+			line-height: 1.4;
+			font-family: "Verdana","Helvetica","Arial",sans-serif;
+		}
 		</style>
 		<div id="contentDiv"></div>
 
