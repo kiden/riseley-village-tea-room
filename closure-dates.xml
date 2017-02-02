@@ -5,27 +5,42 @@
 	</ModulePrefs>
 
     <Content type="html">
-          <![CDATA[
-          <div id="contentDiv"></div>
-          
-          <script type="text/javascript">
-            
-              function getHtml() {    
-                  var parameters = {};  
-                  parameters[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.TEXT;  
-                  var url = "https://script.google.com/macros/s/AKfycbwArk2SiTg0N_6-Kb1Gs8bMXU7eRNqrEjRaX1bNq-MYZGf1d54/exec";  
-                  gadgets.io.makeRequest(url, processResponse, parameters);
-              };
-             
-              function processResponse(response) {  
-                   document.getElementById('contentDiv').innerHTML = response.text;
-     		   gadgets.window.adjustHeight();
-              };
-             
-              gadgets.util.registerOnLoadHandler(getHtml);
-         
-         </script>
+		<![CDATA[
+		<script type="text/javascript">
+		window.onload = function() {
+				if (parent) {
+						var oHead = document.getElementsByTagName("head")[0];
+						var arrStyleSheets = parent.document.getElementsByTagName("style");
+						for (var i = 0; i < arrStyleSheets.length; i++)
+								oHead.appendChild(arrStyleSheets[i].cloneNode(true));
+				}
+		}
+		</script>
+		<style>
+		#contentDiv {
+			/*text-align: center;*/
+		}
+		</style>
+		<div id="contentDiv"></div>
 
-          ]]>
+		<script type="text/javascript">
+
+			function getHtml() {    
+				var parameters = {};  
+				parameters[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.TEXT;  
+				var url = "https://script.google.com/macros/s/AKfycbwArk2SiTg0N_6-Kb1Gs8bMXU7eRNqrEjRaX1bNq-MYZGf1d54/exec";  
+				gadgets.io.makeRequest(url, processResponse, parameters);
+			};
+
+			function processResponse(response) {  
+				document.getElementById('contentDiv').innerHTML = response.text;
+		   		gadgets.window.adjustHeight();
+			};
+
+		  gadgets.util.registerOnLoadHandler(getHtml);
+
+		</script>
+
+		]]>
 	</Content>
 </Module>
