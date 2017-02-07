@@ -13,42 +13,32 @@
     <link rel="stylesheet" type="text/css" href="//kenwheeler.github.io/slick/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="//kenwheeler.github.io/slick/slick/slick-theme.css"/>
 
-    <div id="contentDiv" class="slider" style="text-align:center; color:#444; line-height:1.4; font-size:10pt; font-family:&quot;Verdana&quot;,&quot;Helvetica&quot;,&quot;Arial&quot;,sans-serif !important;">hello hello</div>
+    <div id="contentDiv" class="slider" style="text-align:center; color:#444; line-height:1.4; font-size:10pt; font-family:&quot;Verdana&quot;,&quot;Helvetica&quot;,&quot;Arial&quot;,sans-serif !important;">hello world</div>
 		
-    
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//kenwheeler.github.io/slick/slick/slick.min.js"></script>
-    
-    <script type="text/javascript">
-    /*$(document).ready(function(){
-      $('.slider').slick({
-        dots: true,
-        autoplay: true,
-        autoplaySpeed: 4000
-      });
-    });*/
-    </script>
 
-    
     <script type="text/javascript">
     function getHtml() {
 	var prefs = new _IG_Prefs();
         var GDfolder = prefs.getString("GDfolder");
-				var parameters = {};  
-				parameters[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.TEXT;  
-				var url = "https://script.google.com/macros/s/AKfycbzq41VykhE2YZbvTALrwTS068BD-Hm8-j4KBNmIJwxKooeXNlQ/exec?folder=" + GDfolder; 
-				gadgets.io.makeRequest(url, processResponse, parameters);
-			};
-			function processResponse(response) {  
-				document.getElementById('contentDiv').innerHTML = response.text;
-				      $('.slider').slick({
-				      	dots: true
-				      });
-		   		gadgets.window.adjustHeight();
-			};
-		  gadgets.util.registerOnLoadHandler(getHtml);
-		</script>
-		]]>
-	</Content>
+        var parameters = {};  
+        parameters[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.TEXT;  
+        var url = "https://script.google.com/macros/s/AKfycbzq41VykhE2YZbvTALrwTS068BD-Hm8-j4KBNmIJwxKooeXNlQ/exec?folder=" + GDfolder; 
+        gadgets.io.makeRequest(url, processResponse, parameters);
+    };
+    function processResponse(response) {  
+        document.getElementById('contentDiv').innerHTML = response.text;
+        $('.slider').slick({
+                            dots: true,
+                            autoplay: true,
+                            autoplaySpeed: 4000
+        });
+        gadgets.window.adjustHeight();
+    };
+    gadgets.util.registerOnLoadHandler(getHtml);
+    </script>
+    ]]>
+    </Content>
 </Module>
