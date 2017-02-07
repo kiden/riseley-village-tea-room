@@ -9,7 +9,7 @@
             required="true">
   </UserPref>
   <Content type="html">
-		<![CDATA[
+  <![CDATA[
     <link rel="stylesheet" type="text/css" href="//kenwheeler.github.io/slick/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="//kenwheeler.github.io/slick/slick/slick-theme.css"/>
 
@@ -30,7 +30,8 @@
 
     
     <script type="text/javascript">
-			function getHtml() {
+function getHtml() {
+	var prefs = new _IG_Prefs();
         var GDfolder = prefs.getString("GDfolder");
 				var parameters = {};  
 				parameters[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.TEXT;  
