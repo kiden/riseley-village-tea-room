@@ -35,7 +35,8 @@ function getHtml() {
         var GDfolder = prefs.getString("GDfolder");
 				var parameters = {};  
 				parameters[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.TEXT;  
-				var url = "https://script.google.com/macros/s/AKfycbzq41VykhE2YZbvTALrwTS068BD-Hm8-j4KBNmIJwxKooeXNlQ/exec?bob=kejg&folder=" + GDfolder;  
+				var url = "https://script.google.com/macros/s/AKfycbzq41VykhE2YZbvTALrwTS068BD-Hm8-j4KBNmIJwxKooeXNlQ/exec?folder=" + GDfolder; 
+				alert(url);
 				gadgets.io.makeRequest(url, processResponse, parameters);
 			};
 			function processResponse(response) {  
