@@ -10,20 +10,20 @@
   </UserPref>
   <Content type="html">
 		<![CDATA[
-    <link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="//kenwheeler.github.io/slick/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//kenwheeler.github.io/slick/slick/slick-theme.css"/>
 
-		<div id="contentDiv" class="slider" style="text-align:center; color:#444; line-height:1.4; font-size:10pt; font-family:&quot;Verdana&quot;,&quot;Helvetica&quot;,&quot;Arial&quot;,sans-serif !important;">hello</div>
+    <div id="contentDiv" class="slider" style="text-align:center; color:#444; line-height:1.4; font-size:10pt; font-family:&quot;Verdana&quot;,&quot;Helvetica&quot;,&quot;Arial&quot;,sans-serif !important;">hello</div>
 		
     
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="http://kenwheeler.github.io/slick/slick/slick.min.js"></script>
+    <script type="text/javascript" src="//kenwheeler.github.io/slick/slick/slick.min.js"></script>
     
     <script type="text/javascript">
     $(document).ready(function(){
-      $('.your-class').slick({
-        setting-name: setting-value
+      $('.slider').slick({
+        dots: true
       });
     });
     </script>
@@ -34,7 +34,7 @@
         var GDfolder = prefs.getString("GDfolder");
 				var parameters = {};  
 				parameters[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.TEXT;  
-				var url = "https://script.google.com/macros/s/AKfycbzq41VykhE2YZbvTALrwTS068BD-Hm8-j4KBNmIJwxKooeXNlQ/exec?folder=" + GDfolder;  
+				var url = "//script.google.com/macros/s/AKfycbzq41VykhE2YZbvTALrwTS068BD-Hm8-j4KBNmIJwxKooeXNlQ/exec?folder=" + GDfolder;  
 				gadgets.io.makeRequest(url, processResponse, parameters);
 			};
 			function processResponse(response) {  
