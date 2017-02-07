@@ -21,26 +21,28 @@
     <script type="text/javascript" src="//kenwheeler.github.io/slick/slick/slick.min.js"></script>
     
     <script type="text/javascript">
-    $(document).ready(function(){
+    /*$(document).ready(function(){
       $('.slider').slick({
         dots: true
       });
-    });
+    });*/
     </script>
 
     
     <script type="text/javascript">
-function getHtml() {
+    function getHtml() {
 	var prefs = new _IG_Prefs();
         var GDfolder = prefs.getString("GDfolder");
 				var parameters = {};  
 				parameters[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.TEXT;  
 				var url = "https://script.google.com/macros/s/AKfycbzq41VykhE2YZbvTALrwTS068BD-Hm8-j4KBNmIJwxKooeXNlQ/exec?folder=" + GDfolder; 
-				alert(url);
 				gadgets.io.makeRequest(url, processResponse, parameters);
 			};
 			function processResponse(response) {  
 				document.getElementById('contentDiv').innerHTML = response.text;
+				      $('.slider').slick({
+				      	dots: true
+				      });
 		   		gadgets.window.adjustHeight();
 			};
 		  gadgets.util.registerOnLoadHandler(getHtml);
