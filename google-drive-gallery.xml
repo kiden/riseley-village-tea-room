@@ -35,6 +35,7 @@
                             autoplay: true,
                             autoplaySpeed: 4000
         });
+	alert('bob');
         gadgets.window.adjustHeight();
     };
     gadgets.util.registerOnLoadHandler(getHtml);
