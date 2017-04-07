@@ -3,9 +3,11 @@
   <ModulePrefs title="Food Standards Agency" />
   <Content type="html">
      <![CDATA[
+
     <div>
-        <script src="http://widget.ratings.food.gov.uk/fhrswidget.jss?FHRSID=559428&Culture=en-GB"></script>
+        <script src="//widget.ratings.food.gov.uk/fhrswidget.jss?FHRSID=559428&Culture=en-GB"></script>
     </div>                     
+
      ]]>
   </Content>
 </Module>
