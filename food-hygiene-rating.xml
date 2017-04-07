@@ -4,8 +4,7 @@
   <Content type="html">
      <![CDATA[
     <div>
-        <script type="text/javascript" src="http://widget.ratings.food.gov.uk/fhrswidget.jss?FHRSID=559428&Culture=en-GB">
-</script>
+        <script src="http://widget.ratings.food.gov.uk/fhrswidget.jss?FHRSID=559428&Culture=en-GB"></script>
     </div>                     
      ]]>
   </Content>
