@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+  <ModulePrefs title="Food Standards Agency" />
+  <Content type="html">
+     <![CDATA[
+      <script type="text/javascript" src="http://widget.ratings.food.gov.uk/fhrswidget.jss?FHRSID=559428&Culture=en-GB">
+</script>                      
+     ]]>
+  </Content>
+</Module>
